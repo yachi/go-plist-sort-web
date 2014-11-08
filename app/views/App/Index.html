@@ -18,6 +18,14 @@
       {{template "flash.html" .}}
     </div>
   </div>
+  <div class="row">
+    <div class="span6">
+      <form action="/plist" method="post">
+        <textarea name="plist"></textarea>
+        <input type="submit" />
+      </form>
+    </div>
+  </div>
 </div>
 
 {{template "footer.html" .}}
