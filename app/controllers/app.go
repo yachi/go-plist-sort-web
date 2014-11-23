@@ -15,7 +15,7 @@ func (c App) Index() revel.Result {
 func (c App) Plist(plist_input string) revel.Result {
 	// string to bytes and unmarshal
 	plist_bytes := []byte(plist_input)
-	var plist_dict map[string]map[string]interface{}
+	var plist_dict map[string]interface{}
 	plist.Unmarshal(plist_bytes, &plist_dict)
 
 	// encode to plist xml string
